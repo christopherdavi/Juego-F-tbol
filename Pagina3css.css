@@ -1,0 +1,105 @@
+    * {
+    font-family: 'Oswald';
+    cursor: url(guantes.png), auto;
+}
+
+.nivel {
+    
+    height: 150px;
+    
+}
+.container {
+    
+    padding: 130px;
+    display: flex;
+    font-size: 9vh;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition-timing-function: ease;
+    }
+
+body {
+    background-image: url("https://img.freepik.com/vector-gratis/estadio-futbol_1284-22432.jpg?t=st=1645847119~exp=1645847719~hmac=bfdb89fe4b6f9d835cf931652ec5fa96ce9bd499726cb59717e0f775d6c0d1bc&w=1060");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container2 {
+    grid-template-areas:
+    "pelota" "espacio" "espacio" "guantes" ;
+    
+    
+   
+}
+
+
+
+.pelota1 {
+    height: 10vh;
+    width: 10vh;
+    display:block;
+    grid-area:pelota;
+    padding: 10px;
+    animation-name: desplazarse,atajar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+    
+}
+.pelota1:hover {
+    animation-name: atajar;
+    animation-duration: 30s;
+    
+   
+}
+
+
+
+
+@keyframes atajar {
+   to {
+       
+       opacity: 100%;
+       
+       
+   }
+}
+
+
+@keyframes desplazarse {
+    from {
+        position: relative;
+        left: 0;
+    }
+    to {
+        left: 250vh;
+    }
+}
+@keyframes aumentar {
+    
+    10% {
+        height:12vh;
+        width:12vh;
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(30deg);
+    }
+    
+    60% {
+        transform: rotate(60deg);
+    }
+
+    80% {
+        transform: rotate(80deg);
+    }
+    100% {
+        transform: rotate(100deg);
+    }
+}
+
+.musica {
+    display: flex;
+    top: 0%;
+}
